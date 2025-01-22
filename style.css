@@ -462,4 +462,15 @@ footer {
     width: 117.92px;
     padding: 14px 27.5px 20px;
   }
+  .footer-container {
+    display: grid;
+    padding: 65px 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-description {
+    padding-bottom: 32px;
+  }
+  .footer-nav {
+    padding-bottom: 32px;
+  }
 }
