@@ -136,6 +136,11 @@ nav {
   border-radius: 12px;
   margin-top: 24px;
 }
+.banner-btn:hover {
+  background-color: #bee7fa;
+  color: #01acfd;
+  transition: ease-in-out 0.5s;
+}
 
 /* Standard section style */
 .standard {
@@ -344,6 +349,11 @@ footer {
   padding: 10px 61px;
   display: block;
   margin: 0 auto;
+}
+.stories-btn:hover {
+  transition: ease-in-out 0.5s;
+  background-color: #f7f7f7;
+  color: #000;
 }
 /* For Small device */
 @media screen and (max-width: 576px) {
