@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +22,36 @@
 }
 .purple {
   color: rgba(93, 88, 239, 1);
+}
+.title {
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  font-size: 2.87rem;
+  color: #000;
+}
+.subtitle {
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+.p {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  color: #808080;
+  font-weight: 500;
+}
+.bg-skyblue {
+  background-image: linear-gradient(#def5ff, #ffffff);
+  box-shadow: 5px 5px 20px #def5ff;
+}
+.bg-orange {
+  background-image: linear-gradient(#fff4dc, #ffffff);
+  box-shadow: 5px 5px 20px #fff4dc;
+}
+.bg-purple {
+  background-image: linear-gradient(#f2e8ff, #ffffff);
+  box-shadow: 5px 5px 20px #f2e8ff;
 }
 /* Navbar style */
 nav {
@@ -83,7 +113,7 @@ nav {
   gap: 50px;
 }
 .banner-content {
-  padding: 122px 450px 122px 0;
+  padding: 122px 450px 62px 0;
 }
 .banner-title {
   font-family: "Quicksand", serif;
@@ -106,9 +136,53 @@ nav {
   border-radius: 12px;
   margin-top: 24px;
 }
-.banner-image img {
-  width: 100%;
+
+/* Standard section style */
+.standard {
+  background-color: #f7f7f7;
+  background-image: url(images/bg.png);
 }
+.standard-title {
+  text-align: center;
+}
+.standard-cards {
+  display: grid;
+  gap: 28px;
+  margin: 80px 140px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 80px;
+}
+.standerd-card-1 {
+  border: none;
+  border-radius: 18.86px;
+  width: 367.8px;
+  height: 476.78px;
+  width: 367.8px;
+  height: 476.78px;
+}
+.standerd-card-1 img {
+  padding: 52px 115px 32px;
+}
+.standerd-card-title {
+  text-align: center;
+  margin-bottom: 33px;
+  font-family: "Quicksand", serif;
+}
+.standard-description {
+  padding: 0 40px;
+  text-align: center;
+  margin-bottom: 33px;
+  font-family: "Raleway", serif;
+}
+.read-more-1 {
+  margin: 0 140px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+}
+
 /* For Small device */
 @media screen and (max-width: 576px) {
   .logo h3 {
@@ -186,5 +260,17 @@ nav {
     font-weight: bold;
     margin: 0 auto;
     padding: 24px 6px;
+  }
+  .standard-title {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .standard-cards {
+    display: grid;
+    gap: 28px;
+    margin: 20px 0;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 80px;
   }
 }
